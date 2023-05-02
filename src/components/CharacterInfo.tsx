@@ -22,18 +22,17 @@ interface Character {
   created: string;
 }
 
-interface Props {
-  characterId: number;
-}
 
-const CharacterInfo: React.FC<Props> = ({ characterId }) => {
+
+const CharacterInfo: React.FC = () => {
   const [character, setCharacter] = useState<Character | null>(null);
   const [error, setError] = useState<string | null>(null);
-
+const [count, setCount]=useState(1);
   const fetchCharacter = async () => {
     try {
+      setCount((count) => count + 1);
       const response = await axios.get<Character>(
-        `https://rickandmortyapi.com/api/character/${characterId}`
+        `https://rickandmortyapi.com/api/character/${count}`
       );
       setCharacter(response.data);
       setError(null);
@@ -49,7 +48,7 @@ const CharacterInfo: React.FC<Props> = ({ characterId }) => {
       {error && <p>{error}</p>}
       {character && (
         <div>
-          <h2>{character.name}</h2>
+          <h2>{character.name}({character.id})</h2>
           <img src={character.image} alt={character.name} />
           <p>Status: {character.status}</p>
           <p>Species: {character.species}</p>
