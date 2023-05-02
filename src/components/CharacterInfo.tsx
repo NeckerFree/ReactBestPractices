@@ -33,7 +33,7 @@ const CharacterInfo: React.FC<Props> = ({ characterId }) => {
   const fetchCharacter = async () => {
     try {
       const response = await axios.get<Character>(
-        `https://rickandmortyapi.com/api/characte/${characterId}`
+        `https://rickandmortyapi.com/api/character/${characterId}`
       );
       setCharacter(response.data);
       setError(null);
