@@ -1,11 +1,7 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
-//import Collection from '../Data/collection.js';
-// import {writeJsonFile} from 'write-json-file';
-
-
-
-
+// import { useErrorBoundary } from "react-error-boundary";
 interface Character {
   id: number;
   name: string;
@@ -38,6 +34,7 @@ interface Character {
 //   return `${year}-${month}-${day}`
 // }
 const CharacterInfo: React.FC = () => {
+  // const handleError = useErrorBoundary<any>();
   const [character, setCharacter] = useState<Character | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [count, setCount] = useState(1);
@@ -91,7 +88,7 @@ const CharacterInfo: React.FC = () => {
         console.log("success");
       })
        .catch((error) => { // error is handled in catch block
-        throw new Error(error.message);
+        
         // setCharacter(null);
         // setError(error.message);
         // if (error.response) { // status code out of the range of 2xx
@@ -127,3 +124,5 @@ const CharacterInfo: React.FC = () => {
 };
 
 export default CharacterInfo;
+
+
