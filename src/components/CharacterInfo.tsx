@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
-
+// import { useErrorBoundary } from "react-error-boundary";
 interface Character {
   id: number;
   name: string;
@@ -21,30 +22,90 @@ interface Character {
   url: string;
   created: string;
 }
+// const formatDate=(date)=> {  
+//   if (!(date instanceof Date)) {
+//     throw new Error('Invalid "date" argument. You must pass a date instance')
+//   }
 
+//   const year = date.getFullYear()
+//   const month = String(date.getMonth() + 1).padStart(2, '0')
+//   const day = String(date.getDate()).padStart(2, '0')
 
-
+//   return `${year}-${month}-${day}`
+// }
 const CharacterInfo: React.FC = () => {
+  // const handleError = useErrorBoundary<any>();
   const [character, setCharacter] = useState<Character | null>(null);
   const [error, setError] = useState<string | null>(null);
-const [count, setCount]=useState(1);
+  const [count, setCount] = useState(1);
+  // const dateTimeString = formatDate(new Date());
+  //const logFile =new Collection('logger', `./src/data/logger${dateTimeString}.json`);
+  // writeJsonFile('foo.json', {foo: dateTimeString});
+  function processError(errorMessage: any) {
+    const now = new Date();
+    var currentTime = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+    console.log(currentTime+ errorMessage);
+    // const logError = {
+    //   time: `${currentTime}`,
+    //   type: 'error',
+    //   description: `${errorMessage}`
+    // };
+    //logFile.insert(logError);
+    //fs.writeFileSync(`./${dateTimeString}.txt`, `${errorMessage}\r\n`);
+  }
   const fetchCharacter = async () => {
-    try {
-      setCount((count) => count + 1);
-      const response = await axios.get<Character>(
-        `https://rickandmortyapi.com/api/character/${count}`
-      );
-      setCharacter(response.data);
-      setError(null);
-    } catch (e) {
-      setCharacter(null);
-      setError(e.response.data.error);
-    }
+    setCount((count) => count + 1);
+    let URL = `https://rickandmortyapi.com/api/character/${count}`;
+    axios.get<Character>(URL) // send a GET request
+      .then((response) => {
+        setCharacter(response.data);
+        setError(null);
+        console.log("success");
+      })
+      .catch((error) => { // error is handled in catch block
+        setCharacter(null);
+        setError(error.message);
+        processError(error.message);
+        if (error.response) { // status code out of the range of 2xx
+          console.log("Data :", error.response.data);
+          console.log("Status :" + error.response.status);
+        } else if (error.request) { // The request was made but no response was received
+          console.log(error.request);
+        } else {// Error on setting up the request
+          console.log('Error', error.message);
+        }
+      });
+
   };
 
+  const fetchCharacterError = async () => {
+    setCount((count) => count + 1);
+    let URL = `https://rickapi.com/api/character/${count}`;
+    axios.get<Character>(URL) // send a GET request
+      .then((response) => {
+        setCharacter(response.data);
+        setError(null);
+        console.log("success");
+      })
+       .catch((error) => { // error is handled in catch block
+        
+        // setCharacter(null);
+        // setError(error.message);
+        // if (error.response) { // status code out of the range of 2xx
+        //   console.log("Data :", error.response.data);
+        //   console.log("Status :" + error.response.status);
+        // } else if (error.request) { // The request was made but no response was received
+        //   console.log(error.request);
+        // } else {// Error on setting up the request
+        //   console.log('Error', error.message);
+        // }
+       });
+
+  };
   return (
     <div>
       <button onClick={fetchCharacter}>Fetch Character</button>
+      <button onClick={fetchCharacterError}>Fetch Character with Error</button>
       {error && <p>{error}</p>}
       {character && (
         <div>
@@ -63,3 +124,5 @@ const [count, setCount]=useState(1);
 };
 
 export default CharacterInfo;
+
+
