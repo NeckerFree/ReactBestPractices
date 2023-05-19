@@ -1,70 +1,203 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-## Available Scripts
+  <h3><b>Microverse README Template</b></h3>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 📗 Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-### `npm test`
+<!-- PROJECT DESCRIPTION -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 📖 [React Best Practices] <a name="about-project"></a>
 
-### `npm run build`
+**[your_project__name]** is a React App that pretends to explore the transversal and non-functional requirements that should have a good application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Built With <a name="built-with"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tech Stack <a name="tech-stack"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-### `npm run eject`
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="[https://expressjs.com/](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-7.0)">.NET Minimal API</a></li>
+  </ul>
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Features -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Key Features <a name="key-features"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Describe between 1-3 key features of the application.
 
-## Learn More
+- **[Error Handling]**
+- **[Logging]**
+- **[key_feature_3]**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- LIVE DEMO -->
 
-### Code Splitting
+## 🚀 Live Demo <a name="live-demo"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Add a link to your deployed project.
 
-### Analyzing the Bundle Size
+- [Live Demo Link](https://google.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- GETTING STARTED -->
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To get a local copy up and running follow these simple example steps.
 
-### Advanced Configuration
+### Setup
+- Click the green `Code` button on the repo
+- In your local PC, open your terminal in the folder you would like to clone the project.
+- Clone the repo with the command: `git clone (copied link)`; like so: `git clone https://github.com/NeckerFree/ReactBestPractices`
+- On the terminal, navigate into the directory like so: `cd ReactBestPractices`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Install
+in visual studio code
+-  run the command `npm install` to install all the necessary dependencies
+-  run the command `npm start` to start the app.
 
-### Deployment
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👤 **Elio Cortés**
 
-### `npm run build` fails to minify
+- GitHub: [@NeckerFree](https://github.com/NeckerFree)
+- Twitter: [@ElioCortesM](https://twitter.com/ElioCortesM)
+- LinkedIn: [elionelsoncortes](https://www.linkedin.com/in/elionelsoncortes/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[Register Logs consumming remote API Service]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+https://betterprogramming.pub/handling-async-errors-with-axios-in-react-1e25c058a8c9
+https://betterprogramming.pub/how-to-handle-api-errors-in-your-web-app-using-axios-b32b6c41fd35
+https://blog.appsignal.com/2022/06/15/how-to-handle-errors-in-react.html
+https://blog.bitsrc.io/react-error-handling-and-logging-best-practices-4444c57cd666
+https://blog.logrocket.com/react-error-handling-react-error-boundary/
+https://codedamn.com/news/reactjs/try-catch-error-boundaries
+https://dev.to/franklin030601/managing-state-with-react-query-1842
+https://engineering.udacity.com/handling-errors-like-a-pro-in-typescript-d7a314ad4991
+https://majidlotfinia.medium.com/react-query-best-practices-separating-concerns-with-custom-hooks-3f1bc9051fa2
+https://medium.com/@danhuang1202/catch-error-from-event-handler-in-react-error-boundary-f36ec58786af
+https://semaphoreci.com/blog/error-handling-layer-react
+**** https://tanstack.com/query/v4/docs/react/community/tkdodos-blog
+https://upmostly.com/tutorials/a-guide-to-effective-error-handling-in-react
+https://www.developerway.com/posts/how-to-handle-errors-in-react
+https://www.g2i.co/blog/understanding-the-objects-are-not-valid-as-a-react-child-error-in-react
+https://www.loggly.com/blog/best-practices-for-client-side-logging-and-error-handling-in-react/
+https://www.npmjs.com/package/react-error-boundary
+https://www.npmjs.com/package/typescript-logging 
+https://www.smashingmagazine.com/2020/06/react-error-handling-reporting-error-boundary-sentry/
