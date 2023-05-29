@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/NeckerFree/ReactBestPractices/static/css/main.e2a280c7.css",
-    "main.js": "/NeckerFree/ReactBestPractices/static/js/main.8d750282.js",
+    "main.js": "/NeckerFree/ReactBestPractices/static/js/main.20a0327f.js",
     "index.html": "/NeckerFree/ReactBestPractices/index.html",
     "main.e2a280c7.css.map": "/NeckerFree/ReactBestPractices/static/css/main.e2a280c7.css.map",
-    "main.8d750282.js.map": "/NeckerFree/ReactBestPractices/static/js/main.8d750282.js.map"
+    "main.20a0327f.js.map": "/NeckerFree/ReactBestPractices/static/js/main.20a0327f.js.map"
   },
   "entrypoints": [
     "static/css/main.e2a280c7.css",
-    "static/js/main.8d750282.js"
+    "static/js/main.20a0327f.js"
   ]
 }
