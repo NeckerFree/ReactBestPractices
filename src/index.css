@@ -18,7 +18,9 @@ code {
   flex-direction: column;   
   margin: 20px; 
 }
-
+.error-page{
+  margin-left: 20px;
+}
 .error-title {
   font-size: 30px;
   font-weight: bold;
